@@ -1,4 +1,3 @@
-Watch corporate (none ethique, boycott,polution)
 🏢 CorporateWatch Bot
 🌍 Surveillance des Entreprises en Temps Réel
 CorporateWatch Bot est une IA écologique qui surveille en continu les entreprises les plus polluantes au monde. Elle traque leurs émissions CO2, détecte le greenwashing, vérifie leurs promesses climatiques et identifie les produits à boycotter.
