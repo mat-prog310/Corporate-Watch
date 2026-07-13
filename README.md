@@ -1,75 +1,109 @@
-🏢 CorporateWatch Bot
-🌍 Surveillance des Entreprises en Temps Réel
-CorporateWatch Bot est une IA écologique qui surveille en continu les entreprises les plus polluantes au monde. Elle traque leurs émissions CO2, détecte le greenwashing, vérifie leurs promesses climatiques et identifie les produits à boycotter.
+# 🏢 CorporateWatch Bot
 
-📊 Fonctionnalités
-🏭 Surveillance des Entreprises
-Top 50 entreprises polluantes classées par émissions CO2
+![Version](https://img.shields.io/badge/version-2.0.0-blue)
+![Python](https://img.shields.io/badge/python-3.8%2B-green)
+![Licence](https://img.shields.io/badge/licence-MIT-orange)
+![Status](https://img.shields.io/badge/status-active-success)
 
-Score éthique sur 100 pour chaque entreprise
+> 🌍 Surveillance en temps réel des entreprises polluantes - Détection de greenwashing - Système de boycott éthique
 
-Émissions Scope 1, 2 et 3 détaillées
+---
 
-Niveau de boycott : 🔴 BANNIR / 🟠 BOYCOTTER / 🟡 ÉVITER
+## 📖 Table des matières
 
-🚨 Détection Greenwashing
-Comparaison promesses vs réalité des émissions
+- [Aperçu](#-aperçu)
+- [Fonctionnalités](#-fonctionnalités)
+- [Installation](#-installation)
+- [Utilisation](#-utilisation)
+- [Entreprises surveillées](#-entreprises-surveillées)
+- [Système de boycott](#-système-de-boycott)
+- [Sources de données](#-sources-de-données)
+- [Architecture](#-architecture)
+- [Contribution](#-contribution)
+- [Licence](#-licence)
 
-Analyse des écarts par rapport aux objectifs climatiques
+---
 
-Détection automatique des fausses promesses
+## 🌟 Aperçu
 
-Indice greenwashing calculé en temps réel
+**CorporateWatch Bot** est une intelligence artificielle écologique qui surveille en continu les pratiques environnementales des plus grandes entreprises mondiales. Elle analyse leurs émissions de CO₂, détecte le greenwashing, vérifie le respect de leurs promesses climatiques et recommande des actions de boycott ciblées.
 
-⚠️ Incidents Environnementaux
-Suivi des incidents : marées noires, pollutions, déforestation
+### 🎯 Objectifs
 
-Amendes environnementales cumulées
+- **Surveiller** les 50 entreprises les plus polluantes au monde
+- **Détecter** le greenwashing et les fausses promesses
+- **Informer** sur les alternatives éthiques
+- **Agir** via des recommandations de boycott
 
-Procès en cours contre les entreprises
+---
 
-Impact financier estimé des dégâts
+## ⚡ Fonctionnalités
 
-🚫 Système de Boycott
-Produits à BANNIR (impact catastrophique)
+### 📊 Tableau de bord complet
+- Score éthique sur 100 pour chaque entreprise
+- Émissions CO₂ détaillées (Scope 1, 2, 3)
+- Niveau de boycott : 🔴 BANNIR / 🟠 BOYCOTTER / 🟡 ÉVITER
+- Historique des incidents environnementaux
 
-Produits à BOYCOTTER (efforts insuffisants)
+### 🚨 Détection de greenwashing
+- Comparaison promesses vs réalité
+- Analyse des écarts par rapport aux objectifs climatiques
+- Détection automatique des fausses promesses
+- Indice de greenwashing calculé en temps réel
 
-Produits à ÉVITER (problèmes documentés)
+### ⚠️ Incidents environnementaux
+- Suivi des marées noires, pollutions chimiques, déforestation
+- Cumul des amendes environnementales
+- Procès en cours contre les entreprises
+- Estimation de l'impact financier des dégâts
 
-Alternatives éthiques recommandées
+### 🚫 Système de boycott intelligent
+- **🔴 BANNIR** : Impact catastrophique, aucune volonté de changement
+- **🟠 BOYCOTTER** : Impact grave, efforts insuffisants
+- **🟡 ÉVITER** : Problèmes documentés, transition possible
+- **✅ ALTERNATIVES** : Suggestions éthiques pour chaque produit
 
-📡 Surveillance en Direct
-Alertes live sur les controverses
+### 📡 Surveillance en direct
+- Alertes live sur les controverses
+- Sentiment public sur les réseaux sociaux
+- Actualités en temps réel
+- Campagnes de boycott en cours
 
-Sentiment public sur les réseaux sociaux
+### 📄 Export de rapports
+- Rapports détaillés par entreprise
+- Comparaisons sectorielles
+- Statistiques globales
+- Export au format TXT
 
-Actualités en temps réel
+---
 
-Campagnes de boycott en cours
+## 🚀 Installation
 
-🚀 Installation
-Prérequis
-Python 3.8 ou supérieur
+### Prérequis
 
-pip (gestionnaire de paquets Python)
+- **Python** 3.8 ou supérieur
+- **pip** (gestionnaire de paquets Python)
 
-Installation des dépendances
-bash
-# Installation de base (fonctionne sans dépendances externes)
+### Installation rapide
+
+```bash
+# Cloner le dépôt
+git clone https://github.com/votre-username/corporate-watch.git
+cd corporate-watch
+
+# Installation minimale (fonctionne sans dépendances externes)
 pip install requests beautifulsoup4
 
 # Installation complète (recommandée)
 pip install requests beautifulsoup4 pandas matplotlib seaborn
-Cloner le projet
+Vérification de l'installation
 bash
-git clone https://github.com/votre-username/corporate-watch.git
-cd corporate-watch
+python -c "import corporatewatch; print('✅ Installation réussie !')"
 💻 Utilisation
-Lancement rapide
+Lancement
 bash
 python corporatewatch.py
-Menu Principal
+Menu principal
 text
 📋 MENU CORPORATEWATCH
 ==================================================
@@ -86,166 +120,21 @@ text
 11. 🔍 Rechercher une entreprise
 12. 🚫 MENU BOYCOTT (produits à bannir/éviter)
 13. 🚪 Quitter
-14. 
-📡 Sources de Données
-Source	Type de données	Fiabilité
-Carbon Tracker	Émissions CO2 entreprises	⭐⭐⭐⭐⭐
-IEA (Agence Internationale de l'Énergie)	Statistiques énergétiques	⭐⭐⭐⭐⭐
-Greenpeace	Controverses environnementales	⭐⭐⭐⭐
-Fashion Revolution	Fast Fashion	⭐⭐⭐⭐
-Break Free From Plastic	Pollution plastique	⭐⭐⭐⭐
-Reuters / AFP	Actualités en direct	⭐⭐⭐⭐⭐
-OFAC (USA)	Sanctions américaines	⭐⭐⭐⭐⭐
-UE Sanctions Map	Sanctions européennes	⭐⭐⭐⭐⭐
+Exemple d'utilisation
+python
+from corporatewatch import CorporateWatchBot
 
-🏢 Entreprises Surveillées
-🔴 À BANNIR TOTALEMENT
-Entreprise	Secteur	CO2 (Mt)	Score
-Saudi Aramco	Pétrole & Gaz	1 900	8/100
-Coal India	Charbon	1 550	6/100
-Gazprom	Pétrole & Gaz	1 250	5/100
-Coca-Cola	Boissons	65	5/100
-Shein	Fast Fashion	25	2/100
-Nestlé	Agroalimentaire	95	4/100
-Amazon	Tech/E-commerce	85	6/100
-BNP Paribas	Banque/Finance	-	5/100
+# Initialiser le bot
+bot = CorporateWatchBot()
 
-🟠 À BOYCOTTER ACTIVEMENT
-Entreprise	Secteur	CO2 (Mt)	Score
-TotalEnergies	Pétrole & Gaz	420	30/100
-BP	Pétrole & Gaz	520	25/100
-Zara/Inditex	Fast Fashion	22	15/100
-Nutella/Ferrero	Alimentation	-	15/100
-L'Oréal	Cosmétiques	-	18/100
+# Afficher le tableau de bord complet
+bot.afficher_dashboard_complet()
 
-🟡 À ÉVITER SI POSSIBLE
-Entreprise	Secteur	CO2 (Mt)	Score
-Shell	Pétrole & Gaz	580	22/100
-H&M	Fast Fashion	18	20/100
-Nike	Sport/Textile	15	22/100
-Apple	Tech	8	28/100
-Unilever	Multi-produits	-	22/100
+# Vérifier une entreprise spécifique
+bot.afficher_fiche_entreprise("TotalEnergies")
 
-🚫 Guide de Boycott Rapide
-🛢️ Pétrole & Gaz
-❌ Shell V-Power → ✅ Voiture électrique
+# Détecter le greenwashing
+bot.afficher_greenwashing_detecte()
 
-❌ Total Excellium → ✅ Covoiturage
-
-❌ Esso/Exxon → ✅ Transports en commun
-
-🥤 Boissons
-❌ Coca-Cola → ✅ Eau du robinet
-
-❌ Nestlé Pure Life → ✅ Gourde réutilisable
-
-👗 Mode
-❌ Shein → ✅ Patagonia, Veja, friperies
-
-❌ Zara → ✅ 1083, LOOM
-
-❌ H&M → ✅ Vinted, seconde main
-
-🍫 Alimentation
-❌ Nutella → ✅ Pâtes à tartiner bio
-
-❌ Roundup/Bayer → ✅ Agriculture biologique
-
-💻 Tech
-❌ iPhone neuf → ✅ Fairphone, reconditionné
-
-❌ Amazon → ✅ Commerces locaux
-
-🏦 Banque
-❌ BNP Paribas → ✅ NEF, Crédit Coopératif
-
-❌ Société Générale → ✅ Green-Got
-
-📊 Exemple de Sortie
-text
-🏢 TOTALENERGIES | France | Pétrole & Gaz
-============================================================
-📊 SCORE ÉTHIQUE: 🟡 18/100 | NIVEAU: 🟠 BOYCOTTER
-   Greenwashing: ██████████████ 72%
-   Transparence: ███████ 35%
-
-💨 ÉMISSIONS CO2 (Mt):
-   2025: 420 | 2026: 425 | Cible 2030: 300
-   Tendance: 📈 HAUSSE 1.2%
-
-📋 SUIVI DES PROMESSES:
-   1. ⚠️ Neutralité carbone 2050
-      Progression: 12% | Écart: 35% | 🚨 GREENWASHING
-   2. ✅ 100 GW renouvelables 2030
-      Progression: 45% | Écart: 5%
-
-⚠️ INCIDENTS RÉCENTS:
-   🔴 [2026-06-15] POLLUTION CHIMIQUE
-   Fuite pipeline EACOP en Ouganda...
-   📍 Ouganda | 💰 125M€ amendes
-
-📡 ACTIVITÉ EN DIRECT:
-   💹 Bourse: 62.45€ 📉 -2.3%
-   📊 Sentiment public: Très négatif
-   🔥 Controverses actives: 2
-   🚫 Campagnes boycott: 15
-
-🚨 ALERTES ACTIVES:
-   🔴 EACOP : fuite détectée aujourd'hui
-   🟠 Émissions 2026 en hausse malgré promesses
-   🟡 8 procès en cours pour crimes environnementaux
-🔬 Impact du Boycott
-Si 1 million de personnes boycottent :
-
-Action	Impact annuel
-Coca-Cola	500 000 tonnes plastique en moins
-Fast Fashion	45 Mt CO2 évitées
-Banques éthiques	500 milliards € retirés fossiles
-Stop plastique	8 Mt plastique en moins dans océans
-🛠️ Architecture
-text
-corporatewatch.py
-├── Classe CorporateWatchBot
-│   ├── Surveillance entreprises
-│   ├── Détection greenwashing
-│   ├── Système boycott
-│   └── Alertes live
-├── Classe BaseDonneesBoycott
-│   ├── Produits à boycotter
-│   ├── Alternatives éthiques
-│   └── Simulation impact
-├── Classe CollecteurLive
-│   ├── Actualités temps réel
-│   └── Alertes automatiques
-└── Données intégrées
-    ├── Top 50 entreprises
-    ├── Incidents documentés
-    └── Sanctions officielles
-
-🌱 Alternatives Éthiques Recommandées
-Catégorie	À éviter	Alternative
-Énergie	Total, Shell, BP	Enercoop, Plüm
-Banque	BNP, Société Générale	NEF, Crédit Coopératif
-Mode	Shein, Zara, H&M	Patagonia, Veja, 1083
-Tech	Amazon, Apple neuf	Fairphone, Back Market
-Alimentation	Coca-Cola, Nestlé	Biocoop, La Vie Claire
-Cosmétiques	L'Oréal, Unilever	Lush, Weleda
-
-⚠️ Avertissement
-Ce bot utilise des données publiques et des sources vérifiées. Les scores et recommandations sont basés sur des faits documentés. Consultez les sources originales pour plus de détails.
-
-📜 Licence
-Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
-
-🤝 Contribution
-Les contributions sont les bienvenues ! Ouvrez une issue ou un pull request.
-
-Fork le projet
-
-Créez votre branche (git checkout -b feature/AmazingFeature)
-
-Committez vos changements (git commit -m 'Add AmazingFeature')
-
-Poussez vers la branche (git push origin feature/AmazingFeature)
-
-Ouvrez un Pull Request
+# Voir les produits à boycotter
+bot.base_boycott.afficher_produits_a_boycotter("Fast Fashion")
